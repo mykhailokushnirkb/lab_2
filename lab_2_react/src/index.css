@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+/* Світла тема */
+.resume-page {
+    color-scheme: light;
+}
+
+/* Фон і основний текст темної теми */
+.resume-page.dark {
+    color-scheme: dark;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Картки розділів та модальне вікно */
+.resume-page.dark .bg-white {
+    background-color: #1e293b;
+}
+
+/* Внутрішні блоки досвіду, освіти й коментарів */
+.resume-page.dark .bg-slate-50 {
+    background-color: #334155;
+}
+
+/* Заголовки */
+.resume-page.dark .text-blue-900 {
+    color: #bfdbfe;
+}
+
+/* Основний текст і текст полів форми */
+.resume-page.dark .text-slate-700,
+.resume-page.dark .text-slate-800,
+.resume-page.dark .text-slate-900 {
+    color: #e2e8f0;
+}
+
+/* Допоміжний текст */
+.resume-page.dark .text-slate-500 {
+    color: #cbd5e1;
+}
+
+/* Межі карток і полів */
+.resume-page.dark .border-blue-200,
+.resume-page.dark .border-slate-300 {
+    border-color: #64748b;
+}
+
+/* Посилання */
+.resume-page.dark a.text-blue-700 {
+    color: #93c5fd;
+}
+
+.resume-page.dark a.text-blue-700:hover {
+    color: #dbeafe;
+}
+
+/* Повідомлення про помилки */
+.resume-page.dark .text-red-700 {
+    color: #fca5a5;
+}
+
+/* Кнопка закриття форми */
+.resume-page.dark button[aria-label="Закрити форму"]:hover {
+    color: #fff;
+}

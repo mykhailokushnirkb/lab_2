@@ -10,7 +10,7 @@
     <header>
         <h1>Кушнір Михайло Ярославович</h1>
         <p>Студент групи КБ-402</p>
-        <p>Лабораторна робота №3. Варіант 11.</p>
+        <p>Лабораторна робота №4. Варіант 11.</p>
 
         <nav aria-label="Розділи резюме">
             <a href="#about">Про мене</a> |
@@ -19,6 +19,14 @@
             <a href="#education">Освіта</a> |
             <a href="#contacts">Контакти</a>
         </nav>
+        <button
+    id="themeToggle"
+    class="theme-button"
+    type="button"
+    aria-pressed="false"
+>
+    Увімкнути темну тему
+</button>
     </header>
 
     <main>
@@ -83,6 +91,14 @@
                 практичний курс» на платформі Prometheus.
             </p>
         </section>
+        <section id="reviews">
+    <h2>Коментарі попередніх роботодавців</h2>
+    <p>Навчальні відгуки із JSONPlaceholder. Варіант 11.</p>
+
+    <div id="comments" class="comments-list" aria-live="polite">
+        Завантаження коментарів…
+    </div>
+</section>
     </main>
 
     <footer id="contacts">
@@ -93,6 +109,64 @@
                 mykhailo.kushnir.kb.2023@lpnu.ua
             </a>
         </p>
+        <h2>Інформація із localStorage</h2>
+<pre id="storageInfo" class="storage-info"></pre>
     </footer>
+    <dialog id="contactModal" aria-labelledby="contactTitle">
+    <button
+        id="closeModal"
+        class="close-modal"
+        type="button"
+        aria-label="Закрити форму"
+    >
+        ×
+    </button>
+
+    <h2 id="contactTitle">Форма зворотного зв’язку</h2>
+
+    <form
+        action="https://formspree.io/f/meagvryw"
+        method="POST"
+        class="contact-form"
+    >
+        <label for="contactName">Ім’я</label>
+        <input
+            id="contactName"
+            type="text"
+            name="name"
+            autocomplete="name"
+            required
+        >
+
+        <label for="contactEmail">Email</label>
+        <input
+            id="contactEmail"
+            type="email"
+            name="email"
+            autocomplete="email"
+            required
+        >
+
+        <label for="contactPhone">Номер телефону</label>
+        <input
+            id="contactPhone"
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            required
+        >
+
+        <label for="contactMessage">Повідомлення</label>
+        <textarea
+            id="contactMessage"
+            name="message"
+            rows="4"
+            required
+        ></textarea>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</dialog>
+    <script src="script.js"></script>
 </body>
 </html>

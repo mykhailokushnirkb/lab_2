@@ -10,7 +10,7 @@ export default function Header() {
       </p>
 
       <p className="mt-2 text-sm text-blue-100">
-        Лабораторна робота №3. Варіант 11.
+        Лабораторна робота №4. Варіант 11.
       </p>
 
       <nav
